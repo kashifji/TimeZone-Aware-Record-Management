@@ -18,8 +18,11 @@ class TimeZoneService
      */
     public function processRecordsWithTimezone(Request $request, $records)
     {
+        $timezone = $request->input('timezone');
 
-        $timezone = $request->input('timezone', $this->getServerSideTimezone($request->ip()));
+        if ($timezone === null) {
+            $timezone = $this->getServerSideTimezone($request->ip());
+        }
 
          if (!$this->isValidTimezone($timezone)) {
             $timezone = Auth::user()->timezone ?: 'UTC';  // Fallback to user's preferred timezone or UTC
@@ -58,7 +61,6 @@ class TimeZoneService
     try {
          $userIp = request()->ip();  // or a specific IP for testing
          $location = GeoIP::getLocation(request()->ip)->timezone;
-
          return $location;
     } catch (\Exception $e) {
 
