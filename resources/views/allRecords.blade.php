@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'All Records')
 @section('styles')
  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 @endsection
