@@ -21,7 +21,7 @@ $recordId = $request->route('id'); // Get the record ID from the route
 $record = Record::find($recordId);
 
 // Check if the record exists and belongs to the current user
-if (!$record || $record->user_id !== auth()->id()) {
+if (!$record || $record->user_id != auth()->id()) {
 return response()->json(['message' => 'Unauthorized access or record not found'], 403);
 }
 
