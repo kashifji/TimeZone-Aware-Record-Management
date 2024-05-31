@@ -64,4 +64,4 @@ This command will launch the server at http://localhost:8000, where you can star
 Using the Application
 
     Register/Log in: Start by registering a new user or logging in.
-    Manage Records: Once logged in, you can create new records, view them in a list, and select individual records to edit or delete.
+    Manage Records: Once logged in, you can create new records, view them in a list.
