@@ -1,4 +1,7 @@
 TimeZone-aware Record Management System
+
+Run Demo app at https://recordsmanager.kashifamin.dev
+
 Description
 
 The Timezone Management Application is a Laravel-based system designed for managing records with timezone-sensitive details. It is ideal for users who need to manage time-specific data across various global locations and ensures that all time data is presented in the correct local context.
