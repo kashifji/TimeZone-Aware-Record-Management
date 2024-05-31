@@ -8,7 +8,7 @@ use Torann\GeoIP\Facades\GeoIP;
 use Illuminate\Http\Request;
 use Auth;
 
-class TimezoneService
+class TimeZoneService
 {
     /**
      * Process records with timezone conversion.

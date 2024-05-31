@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Record;
 use Torann\GeoIP\Facades\GeoIP;
-use App\Services\TimezoneService;
+use App\Services\TimeZoneService;
 use Auth;
 use Carbon\Carbon;
 
