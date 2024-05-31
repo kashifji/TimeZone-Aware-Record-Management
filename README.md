@@ -35,6 +35,7 @@ Installation
     Clone the repository:
 
 git clone https://github.com/kashifji/TimeZone-Aware-Record-Management.git
+
 cd TimeZone-Aware-Record-Management
 
 Install PHP dependencies:
