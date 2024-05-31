@@ -21,8 +21,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 
 Route::middleware(['auth'])->group(function () {
 
-Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'showProfile']);
-Route::post('/updateProfile', [App\Http\Controllers\ProfileController::class, 'updateProfile'])->name('profile.update');
+Route::get('/profile', [App\Http\Controllers\profileController::class, 'showProfile']);
+Route::post('/updateProfile', [App\Http\Controllers\profileController::class, 'updateProfile'])->name('profile.update');
 
 Route::get('/addRecord', [App\Http\Controllers\RecordController::class, 'addRecord']);
 Route::post('/addRecord', [App\Http\Controllers\RecordController::class, 'store'])->name('records.store');
