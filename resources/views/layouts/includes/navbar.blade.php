@@ -67,6 +67,9 @@
                 <a class="navbar-brand {{ request()->is('addRecord') ? 'active' : '' }}" href="{{ url('/addRecord') }}">
                    Add New Record
                 </a>
+                <a class="navbar-brand {{ request()->is('profile') ? 'active' : '' }}" href="{{ url('/profile') }}">
+                  Profile
+                </a>
                 @endif
 
 
